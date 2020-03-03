@@ -104,7 +104,7 @@ def gross_per_studio(collection)
   
   
 def calculate_total_alpha(collection)
-  binding.pry
+ 
     index = 0
     total_alpha = 0
       while index < collection.length do
@@ -153,6 +153,7 @@ end
 # call code. You'll have to "see-saw" to get this to work!
 
 def studios_totals(nds)
+   binding.pry
   # Transform directors_database NDS by creating an array of movies arrays. Each movies array contains hashes, one hash for each individual movie
   a_o_a_movies_with_director_names = movies_with_directors_set(nds)
   
@@ -161,5 +162,7 @@ def studios_totals(nds)
   
   # Takes in the big AoH we just created and returns ONE hash with studio name as key and total 
   # worldwide_gross as the value.
+  
   return gross_per_studio(movies_with_director_names)
+  
 end
