@@ -107,6 +107,12 @@ def gross_per_studio(collection)
  while index < collection.length do
    binding.pry
    studio_name = collection[index][:studio]
+   worldwide_gross = collection[index][:worldwide_gross]
+   if !result[studio_name]
+     result[studio_name] = worldwide_gross
+   else
+     result[studio_name] += worldwide_gross
+   end
    index += 1
  end
 
