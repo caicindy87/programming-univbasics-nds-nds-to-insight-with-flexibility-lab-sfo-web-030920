@@ -153,7 +153,6 @@ end
 # call code. You'll have to "see-saw" to get this to work!
 
 def studios_totals(nds)
-   binding.pry
   # Transform directors_database NDS by creating an array of movies arrays. Each movies array contains hashes, one hash for each individual movie
   a_o_a_movies_with_director_names = movies_with_directors_set(nds)
   
