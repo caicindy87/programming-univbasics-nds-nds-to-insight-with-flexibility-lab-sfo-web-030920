@@ -104,6 +104,7 @@ def gross_per_studio(collection)
   
   
 def calculate_total_alpha(collection)
+  binding.pry
     index = 0
     total_alpha = 0
       while index < collection.length do
