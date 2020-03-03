@@ -108,6 +108,7 @@ def gross_per_studio(collection)
    #binding.pry
    studio_name = collection[index][:studio]
    worldwide_gross = collection[index][:worldwide_gross]
+    # Check to see if the studio_name is already a key in result hash. !result[studio_name] says that if studio_name is not already in result hash, then it will add the studio_name to result hash.
    if !result[studio_name]
      result[studio_name] = worldwide_gross
    else
