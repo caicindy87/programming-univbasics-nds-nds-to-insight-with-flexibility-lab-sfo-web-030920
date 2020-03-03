@@ -102,48 +102,13 @@ def gross_per_studio(collection)
   # Hash whose keys are the studio names and whose values are the sum
   # total of all the worldwide_gross numbers for every movie in the input Hash
   
-  
-def calculate_total_alpha(collection)
- 
-    index = 0
-    total_alpha = 0
-      while index < collection.length do
-        if collection[index][:studio] == "Alpha Films"
-          total_alpha += collection[index][:worldwide_gross]
-        end
-        index += 1
-      end
-      total_alpha
-end
-    
-    def calculate_total_omega(collection)
-      k = 0
-      total_omega = 0
-      while k < collection.length do
-        if collection[k][:studio] == "Omega Films"
-          total_omega += collection[k][:worldwide_gross]
-        end
-        k += 1
-      end
-      total_omega
-  end
-  result = {}    
-  m = 0
-  while m < collection.length do
-    if collection[m][:studio] == "Alpha Films"
-      result[collection[m][:studio]] = calculate_total_alpha(collection)
-    end
-    m += 1
-  end
+ result = {}
+ index = 0
+ while index < collection.length do
+   binding.pry
+   index += 1
+ end
 
-  n = 0
-  while n < collection.length do
-    if collection[n][:studio] == "Omega Films"
-      result[collection[n][:studio]] = calculate_total_omega(collection)
-    end
-    n += 1
-  end
-  result
 end
 
 
@@ -165,3 +130,46 @@ def studios_totals(nds)
   return gross_per_studio(movies_with_director_names)
   
 end
+
+
+# def calculate_total_alpha(collection)
+ 
+#     index = 0
+#     total_alpha = 0
+#       while index < collection.length do
+#         if collection[index][:studio] == "Alpha Films"
+#           total_alpha += collection[index][:worldwide_gross]
+#         end
+#         index += 1
+#       end
+#       total_alpha
+# end
+    
+#     def calculate_total_omega(collection)
+#       k = 0
+#       total_omega = 0
+#       while k < collection.length do
+#         if collection[k][:studio] == "Omega Films"
+#           total_omega += collection[k][:worldwide_gross]
+#         end
+#         k += 1
+#       end
+#       total_omega
+#   end
+#   result = {}    
+#   m = 0
+#   while m < collection.length do
+#     if collection[m][:studio] == "Alpha Films"
+#       result[collection[m][:studio]] = calculate_total_alpha(collection)
+#     end
+#     m += 1
+#   end
+
+#   n = 0
+#   while n < collection.length do
+#     if collection[n][:studio] == "Omega Films"
+#       result[collection[n][:studio]] = calculate_total_omega(collection)
+#     end
+#     n += 1
+#   end
+#   result
