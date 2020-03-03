@@ -106,6 +106,7 @@ def gross_per_studio(collection)
  index = 0
  while index < collection.length do
    binding.pry
+   studio_name = collection[index][:studio]
    index += 1
  end
 
