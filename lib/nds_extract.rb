@@ -112,6 +112,7 @@ def gross_per_studio(collection)
    if !result[studio_name]
      result[studio_name] = worldwide_gross
    else
+     # If that stuio is already in result hash, it will add worldwide_gross to the existing worldwide_gross.
      result[studio_name] += worldwide_gross
    end
    index += 1
